@@ -1,8 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-const exec = require("child_process").exec;
 const crypto = require("crypto");
-const http = require("http");
 
 const SECRET_TOKEN = process.env.API_ROUTE_SECRET;
 const sig = "x-hub-signature";
